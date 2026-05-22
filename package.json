@@ -27,7 +27,9 @@
     "test:src": "vitest run src",
     "test": "run-s test:samples test:integration test:src",
     "test:e2e": "playwright test",
-    "test:e2e-ui": "playwright test --ui"
+    "test:e2e-ui": "playwright test --ui",
+    "test:e2e-funnel": "playwright test funnel.spec.ts",
+    "test:e2e-checkout": "playwright test checkout-validation.spec.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "5.2.2",
